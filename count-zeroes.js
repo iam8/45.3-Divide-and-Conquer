@@ -38,8 +38,8 @@ function countZeroes(arr) {
         }
     }
 
-    // 'Catch-all' in case given array may not have been properly structured, though note that a
-    // positive result may still be returned even if array is not properly structured
+    // 'Catch-all' in case given array may not have been properly sorted, though note that a
+    // positive result may still be returned even if array is not properly sorted
     return -1;
 }
 
