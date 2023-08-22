@@ -2,7 +2,9 @@
 /**
  * Return the index of a target value in a rotated array.
  *
- * @param {Number[]} arr A rotated array of sorted numbers
+ * Time complexity: O(log n)
+ *
+ * @param {Number[]} arr A rotated array of sorted numbers (ascending order)
  * @param {Number} target Value to search for in array
  * @returns The index of the target value, or -1 if not found
  */
