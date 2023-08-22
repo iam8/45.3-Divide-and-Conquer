@@ -90,9 +90,6 @@ function sortedFrequency(arr, target) {
     const firstTargIdx = getFirstOccIndex(arr, target, 0, len - 1);
     const lastTargIdx = getLastOccIndex(arr, target, firstTargIdx, len - 1);
 
-    console.log("First occ:", firstTargIdx);
-    console.log("Last occ:", lastTargIdx);
-
     if (firstTargIdx === -1 || lastTargIdx === -1) {
         return -1;
     }
