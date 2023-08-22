@@ -3,6 +3,8 @@
  * Find the number of times a given array of sorted, distinct numbers has been rotated
  * (counter-clockwise).
  *
+ * Time complexity: O(log n)
+ *
  * @param {*} arr An array of sorted (ascending order), distinct numbers, rotated counter-clock-
  * wise a number of times
  * @returns The number of times the given array has been rotated
