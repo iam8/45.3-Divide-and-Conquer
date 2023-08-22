@@ -9,7 +9,7 @@
 function findRotatedIndex(rotArr, target) {
     const len = rotArr.length;
 
-
+    if (len === 0) return -1;
 }
 
 
