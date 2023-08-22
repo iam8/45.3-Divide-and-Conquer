@@ -12,9 +12,41 @@ function findRotationCount(arr) {
 
     if (len === 0 || len === 1) return 0;
 
-    let rotations = 0;
+    let leftSearchIdx = 0;
+    let rightSearchIdx = len - 1;
 
-    return rotations;
+    while (leftSearchIdx <= rightSearchIdx) {
+        let midIdx = Math.floor((leftSearchIdx + rightSearchIdx) / 2);
+
+        // Get left, right, and mid values
+        let leftVal = arr[leftSearchIdx];
+        let rightVal = arr[rightSearchIdx];
+        let midVal = arr[midIdx];
+
+        if (leftVal > midVal) {
+            let leftAdj = arr[midIdx - 1];
+            if (leftAdj > midVal) {
+                return midIdx;
+            } else {
+
+                // Search left half
+                rightSearchIdx = midIdx - 1;
+            }
+        } else if (rightVal < midVal) {
+            let rightAdj = arr[midIdx + 1];
+            if (rightAdj < midVal) {
+                return midIdx + 1;
+            } else {
+
+                // Search right half
+                leftSearchIdx = midIdx + 1;
+            }
+        } else {
+            return 0;
+        }
+    }
+
+    return 0;
 }
 
 
